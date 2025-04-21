@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/Page/Admin/crud_artiste.jsp" value="file://$PROJECT_DIR$/src/main/webapp/Page/Admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/Page/Admin/updateUser.jsp" value="file://$PROJECT_DIR$/src/main/webapp/Page/Admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/Page/Artiste/ajoutAlbum.jsp" value="file://$PROJECT_DIR$/src/main/webapp/Page/Artiste" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/Page/Artiste/crud_song.jsp" value="file://$PROJECT_DIR$/src/main/webapp/Page/Artiste" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/Page/User/home.jsp" value="file://$PROJECT_DIR$/src/main/webapp/Page/User" />
+      </map>
+    </option>
+  </component>
+</project>

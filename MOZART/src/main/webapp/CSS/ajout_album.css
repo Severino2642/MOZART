@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    margin: 0px;
+    background-color: rgb(18, 18, 18);
+}
+.split_left{
+    width: 30%;
+    height: 100vh;
+    /* background-color: rgb(28, 25, 41); */
+    background-color:rgb(24, 24, 24);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.logo img{
+    height: 50px;
+}
+.logo h2{
+    letter-spacing: 3px;
+    margin-left: 5px;
+    color: rgb(0, 191, 99);
+    font-family: sans-serif;
+}
+.split_left nav{
+    width: 90%;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: auto;
+}
+.split_left nav a{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 18, 18);
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+}
+.split_left nav a:hover{
+    background-color: rgb(0, 191, 99);
+    color: rgb(18, 18, 18);
+    transform: scale(0.9);
+}
+.split_left nav .active{
+    background-color: rgb(0, 191, 99);
+    color: white;
+    font-weight: bold;
+    transform: scale(0.9);
+}
+.split_left nav i{
+    margin-right: 7%;
+}
+.split_left h3{
+    
+    font-family: sans-serif;
+    /* text-align: center; */
+    margin-top: 28px;
+
+    color: rgb(150, 150, 150);
+}
+.split_right{
+    position: relative;
+    width: 83%;
+    height: 636px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.split_right::-webkit-scrollbar {
+    width: 8px;
+    cursor: pointer;
+}
+.split_right::-webkit-scrollbar-thumb {
+    background-color: rgba(70, 70, 70, 0.651);
+}
+
+.split_right::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+}
+#formulaire{
+    backdrop-filter: blur(2px);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+    width: 90%;
+    border-radius: 5px;
+    margin: auto;
+    font-family: sans-serif;
+}
+#formulaire .photo{
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#formulaire .couverture{
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    /* transform: translate(10%,-120%); */
+    height: 220px;
+    border-radius: 5px;
+    background-color: rgb(18,18,18);
+    color: rgba(255, 255, 255, 0.562);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+#formulaire .couverture img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#formulaire .couverture label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    font-size: 40px;
+    background-position: center;
+    background-size: cover;
+}
+#formulaire .couverture:hover{
+    background-color: rgb(31, 31, 31);
+}
+#formulaire .music{
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(18,18,18);
+    padding: 5px;
+    border-radius: 5px;   
+}
+#formulaire .music label{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.562);
+}
+
+#formulaire .music:hover{
+    background-color: rgb(31, 31, 31);
+}
+#formulaire input:not(.radio){
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;   
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(18,18,18);
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+#formulaire input:not(.radio):hover{
+    box-shadow: 0 0 0 3px rgb(0,191,99);
+}
+
+#formulaire form .info-perso div{
+    margin: 10px;
+    color: white;
+    display: flex;
+}
+#formulaire form select{
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;   
+    padding: 15px;
+    background-color: rgb(18,18,18);
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+#formulaire form select:hover{
+    box-shadow: 0 0 0 3px rgb(0,191,99);
+}
+.bt-submit{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+#formulaire button{
+    cursor: pointer;
+    background-color: rgb(0,191,99);
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all .2s ease-in;
+}
+#formulaire button:hover{
+    background-color: transparent;
+    color: rgb(0,191,99);
+    box-shadow: 0 0 0 2px rgb(0,191,99);
+}
+.logo{
+    padding-bottom: 20px;
+}
+.logo img{
+    height: 50px;
+}
+.header{
+    padding: 10px;
+    padding-left: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+}
+.header nav{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    background-color: transparent;
+    box-shadow: 0 0 0 2px rgb(0, 191, 99);
+    color: rgb(0, 191, 99);
+    transition: all .2s ease-in;
+}
+.header nav a:hover{
+    background-color: rgb(0, 191, 99);
+    color: black;
+}
+.header .formulaire select{
+    position: relative;
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    box-shadow: 0 0 0 1px rgb(116, 116, 116);
+    border: none;
+}
+.header .formulaire{
+    position: relative;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .formulaire form{
+    width: 70%;
+    padding: 1px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px rgb(116, 116, 116);
+}
+.header .formulaire form input{
+    width: 90%;
+    background-color: transparent;
+    height: 30px;
+    color: white;
+    outline: none;
+    border: none;
+}
+.header .formulaire form button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+.table{
+    margin: 10px;
+    background-image: linear-gradient(to bottom,transparent, rgba(255, 255, 255, 0.075),black);
+}
+.table table{
+    font-family: sans-serif;
+    width: 100%;
+}
+.table table th{
+    text-align: left;
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    font-weight: lighter;
+}
+.table table tbody tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.61));
+}
+.table.added table tbody tr:hover{
+    /* background-image: linear-gradient(to bottom, transparent , rgb(0,191,99)); */
+    background-image: none;
+    /* background-color: rgba(0, 129, 67, 0.438); */
+    background-color: rgba(255, 0, 0, 0.466);
+}
+.table:not(.table.table.added) table tbody tr:hover{
+    /* background-image: linear-gradient(to bottom, transparent , rgb(0,191,99)); */
+    background-image: none;
+    background-color: rgba(0, 191, 99, 0.562);
+}
+.table table tbody td{
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(200, 200, 200);
+    font-family: sans-serif;
+}
+.table table .id{
+    text-align: center;
+}
+.table table tbody .title-song{
+    display: flex;
+    align-items: center;
+}
+
+.table table tbody .title-song div{
+    margin-left: 14px;
+}
+.table table tbody .title-song div h3{
+    margin: 0px;
+    font-size: 15px;
+    color: white;
+}
+.table table tbody .title-song div p{
+    margin: 0px;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+}
+
+.table table tbody .title-song img{
+    width: 40px;
+    height: 40px;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 90.5vh;
+}
+.content{
+    width: 50%;
+    height: 89vh;
+    overflow-y: auto;
+    margin: 5px;
+}
+.content::-webkit-scrollbar {
+    width: 8px;
+    cursor: pointer;
+}
+.content::-webkit-scrollbar-thumb {
+    background-color: rgba(70, 70, 70, 0.651);
+}
+
+.content::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+}
+.content h2{
+    position: sticky;
+    top: 0px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    background-color: rgb(18, 18, 18);
+    font-size: 18px;
+    border-radius: 5px;
+}

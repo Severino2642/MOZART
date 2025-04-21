@@ -1,0 +1,165 @@
+.split_right{
+    background-image: linear-gradient(to top, rgb(18,18,18) ,rgba(164, 175, 186, 0.658));
+}
+.playlist{
+    font-family: sans-serif;
+}
+.playlist-info{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.playlist-info .image{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 40px;
+    width: 225px;
+    height: 225px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
+    background-position: center;
+    background-size: cover;
+}
+.playlist-info .title{
+    margin-left: 25px;
+}
+.playlist-info .title p{
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.801);
+    margin: 8px;
+}
+.playlist-info .title p strong{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.911);
+}
+.playlist-info .title p i{
+    font-size: 4px;
+}
+.playlist-info .title h1{
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
+    font-size: 75px;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 0px;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    color: white;
+}
+.playlist-controller{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 50px;
+    backdrop-filter: blur(1.5px);
+}
+.playlist-controller nav{
+    display: flex;
+    align-items: center;
+}
+.playlist-controller nav a{
+    text-decoration: none;
+    font-size: 35px;
+    margin: 15px;
+    color: white;
+}
+.playlist-controller .play-btn{
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background-color: rgb(0,191,99);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    color: black;
+}
+.table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.table table{
+    font-family: sans-serif;
+    width: 95%;
+}
+.table table th{
+    text-align: left;
+    color: rgb(200, 200, 200);
+    font-size: 17px;
+    font-weight: lighter;
+    border-bottom-style: solid;
+    border-color: rgb(201, 201, 201);
+    border-width: 1px;
+    padding-bottom: 5px;
+}
+.table table tbody tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+.table table tbody tr:hover{
+    background-color: rgb(57,57,57);
+}
+.table table tbody td{
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+    font-family: sans-serif;
+}
+.table table .id,
+.table table .time{
+    text-align: center;
+}
+
+.table table .id i{
+    display: none;
+}
+.table table tbody tr:hover .id i{
+    display: block;
+}
+.table table tbody tr:hover .id p{
+    display: none;
+}
+.table table .option-bt i,
+.table table .like-bt i{
+    opacity: 0;
+    /* color: aqua; */
+}
+.table table tbody tr:hover .option-bt i{
+    opacity: 1;
+}
+.table table tbody tr:hover .like-bt i{
+    color: rgb(0,191,99);
+    opacity: 1;
+}
+.table table tbody .title-song{
+    display: flex;
+    align-items: center;
+}
+
+.table table tbody .title-song div{
+    margin-left: 14px;
+}
+.table table tbody .title-song div h3{
+    margin: 0px;
+    font-size: 17px;
+    color: white;
+}
+.table table tbody .title-song div p{
+    margin: 0px;
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+
+.table table tbody .title-song .image{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}

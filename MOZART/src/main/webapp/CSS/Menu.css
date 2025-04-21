@@ -1,0 +1,102 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    margin: 0px;
+    background-color: rgb(18, 18, 18);
+}
+.split_left{
+    width: 17%;
+    height: 100vh;
+    /* background-color: rgb(28, 25, 41); */
+    background-color:rgb(24, 24, 24);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.logo img{
+    height: 50px;
+}
+.logo h2{
+    letter-spacing: 3px;
+    margin-left: 5px;
+    color: rgb(0, 191, 99);
+    font-family: sans-serif;
+}
+.split_left nav{
+    width: 90%;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: auto;
+}
+.split_left nav a{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 18, 18);
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+}
+.split_left nav a:hover{
+    background-color: rgb(0, 191, 99);
+    color: rgb(18, 18, 18);
+    transform: scale(0.9);
+}
+.split_left nav .active{
+    background-color: rgb(0, 191, 99);
+    color: white;
+    font-weight: bold;
+    transform: scale(0.9);
+}
+.split_left nav i{
+    margin-right: 7%;
+}
+.split_left h3{
+    
+    font-family: sans-serif;
+    /* text-align: center; */
+    margin-top: 28px;
+
+    color: rgb(150, 150, 150);
+}
+.split_right{
+    position: relative;
+    width: 83%;
+    height: 636px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.split_right::-webkit-scrollbar {
+    width: 8px;
+    cursor: pointer;
+}
+.split_right::-webkit-scrollbar-thumb {
+    background-color: rgba(70, 70, 70, 0.651);
+}
+
+.split_right::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+}
+iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+section{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}

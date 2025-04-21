@@ -1,0 +1,259 @@
+.split_right{
+    background-image: linear-gradient(to top, rgb(18,18,18) ,rgba(164, 175, 186, 0.658));
+}
+.album{
+    font-family: sans-serif;
+}
+.album-info{
+    display: flex;
+    align-items: flex-end;
+    margin: 20px;
+}
+.album-info .image{
+    width: 155px;
+    height: 155px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
+    background-position: center;
+    background-size: cover;
+}
+.album-info .title{
+    margin-left: 25px;
+}
+.album-info .title p{
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.801);
+    margin: 8px;
+}
+.album-info .title p strong{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.911);
+}
+.album-info .title p i{
+    font-size: 4px;
+}
+.album-info .title h1{
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
+    font-size: 40px;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 0px;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    color: white;
+}
+.album-controller{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 50px;
+    backdrop-filter: blur(1.5px);
+}
+.album-controller nav{
+    display: flex;
+    align-items: center;
+}
+.album-controller nav a{
+    text-decoration: none;
+    font-size: 25px;
+    margin: 15px;
+    color: white;
+}
+.album-controller .play-btn{
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background-color: rgb(0,191,99);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: black;
+}
+.table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.table table{
+    font-family: sans-serif;
+    width: 95%;
+}
+.table table th{
+    text-align: left;
+    color: rgb(200, 200, 200);
+    font-size: 17px;
+    font-weight: lighter;
+    border-bottom-style: solid;
+    border-color: rgb(201, 201, 201);
+    border-width: 1px;
+    padding-bottom: 5px;
+}
+.table table tbody tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+.table table tbody tr:hover{
+    background-color: rgba(0, 0, 0, 0.404);
+}
+.table table tbody td{
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+    font-family: sans-serif;
+}
+.table table .id,
+.table table .time{
+    text-align: center;
+}
+
+.table table .id i{
+    display: none;
+}
+.table table tbody tr:hover .id i{
+    display: block;
+}
+.table table tbody tr:hover .id p{
+    display: none;
+}
+.table table .option-bt i,
+.table table .like-bt i{
+    opacity: 0;
+    /* color: aqua; */
+}
+.table table tbody tr:hover .option-bt i{
+    opacity: 1;
+}
+.table table tbody tr:hover .like-bt i{
+    color: rgb(0,191,99);
+    opacity: 1;
+}
+.table table tbody .title-song{
+    display: flex;
+    align-items: center;
+}
+
+.table table tbody .title-song div{
+    margin-left: 14px;
+}
+.table table tbody .title-song div h3{
+    margin: 0px;
+    font-size: 17px;
+    color: white;
+}
+.table table tbody .title-song div p{
+    margin: 0px;
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+.table table tbody .title-song .image{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+.list-title{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 5px;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.list-title h2{
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.list-title a{
+    cursor: pointer;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(159, 159, 159);
+    font-size: 17px;
+    font-weight: bold;
+}
+.list-item{
+    width: 100%;
+    display: flex;
+}
+.list-item a{
+    text-decoration: none;
+    width: 25%;
+    min-width: 22.5%;
+}
+.item{
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    height: 275px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(24, 24, 24);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
+}
+.item .icon-hover{
+    opacity: 0;
+    transform: translate(250%,240%);
+    position: absolute;
+    width: fit-content;
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: rgb(0,191,99);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: black;
+}
+.item:hover .icon-hover{
+    opacity: 1;
+}
+.item .icon-header{
+    padding: 5px;
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0px 0px 8px black;
+}
+.item:hover{
+    background-color: rgb(57, 57, 57);
+    transform: scale(0.95);
+}
+.item .image{
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.555);
+}
+.item .image.artiste{
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
+}
+.item-info{
+    margin-top: 15px;
+    width: 100%;
+}
+.item-info h3{
+    margin: 2px;
+    font-size: 17px;
+}
+.item-info p{
+    opacity: 0.5;
+    font-size: 15px;
+    margin: 2px;
+    margin-top: 8px;
+}

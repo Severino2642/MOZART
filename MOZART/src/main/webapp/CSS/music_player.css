@@ -1,0 +1,169 @@
+.music-player{
+    display: none;
+    font-family: sans-serif;
+    width: 27%;
+    height: 97vh;
+    border-radius: 10px;
+    background-color: rgb(18, 18, 18);
+    /*backdrop-filter: blur(5px);*/
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);*/
+}
+.music-player .music-header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.music-player .music-header i{
+    font-size: 25px;
+    color: whitesmoke;
+}
+.music-player .music-header .music-source,
+.music-player .music-header .source-name{
+    text-align: center;
+}
+.music-player .music-source{
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgb(160, 160, 160);
+}
+.music-player .source-name{
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+}
+.music-player .disk{
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    border-radius: 8px;
+    /* background-color: black; */
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+}
+/*.music-player .disk.play{*/
+/*    animation-play-state: running;*/
+/*}*/
+@keyframes rotate {
+    0%{ transform: rotate(0); }
+    0%{ transform: rotate(360deg); }
+}
+/*.music-player .disk::before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%,-50%);*/
+/*    width: 35px;*/
+/*    height: 35px;*/
+/*    border-radius: 50%;*/
+/*    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.233);*/
+/*    background-color: rgba(53, 53, 53, 0.479);*/
+/*    backdrop-filter: blur(2px);*/
+/*}*/
+.music-player .music-name,
+.music-player .artiste-name{
+    padding-left: 4%;
+    text-transform: capitalize;
+}
+.music-player .music-name{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+}
+.music-player .artiste-name{
+    font-size: 15px;
+    color: rgb(180, 180, 180);
+}
+.music-player .song-slider{
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 100%;
+}
+.music-player .seck-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+.music-player .seck-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 1px;
+    border-radius: 100%;
+    box-shadow: -400px 0 0 400px rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+.music-player .current-time,
+.music-player .song-duration{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgb(190, 190, 190);
+}
+.music-player .time{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.music-player .controls{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.music-player .play-btn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.945);
+    cursor: pointer;
+    border: none;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    transition: all .2s ease-in-out;
+}
+.music-player .play-btn:hover{
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.233);    
+}
+.music-player .play-btn i{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+.music-player .btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.music-player .btn:hover{
+    transform: scale(1.05);
+}
+.music-player .btn.backward-btn i,
+.music-player .btn.forward-btn i{
+    color: rgb(167, 167, 167);
+    font-size: 30px;
+}
+.music-player .btn.nextMod i,
+.music-player .btn.cycleMod i{
+    font-size: 22px;
+}
